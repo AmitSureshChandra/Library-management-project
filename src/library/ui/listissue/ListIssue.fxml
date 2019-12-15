@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="569.0" prefWidth="803.0" stylesheets="@../support/common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.listissue.ListIssueController">
+   <children>
+      <TableView fx:id="listissuedata" prefHeight="399.0" prefWidth="593.0" styleClass="list-tables" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="bookid" prefWidth="148.0" text="Book Id" />
+          <TableColumn fx:id="memberid" prefWidth="148.0" text="Member Id " />
+            <TableColumn fx:id="count" prefWidth="148.0" text="Issue Count" />
+            <TableColumn fx:id="date" prefWidth="148.0" text="Issue Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,226 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 12 Jul, 2019, 9:00:46 AM
+    Author     : Abhay
+*/
+
+*{
+    -fx-primary : #2B2B2B ;
+    -fx-secondary : #0078d7;
+    -fx-primarytext : #fff;
+    -fx-red : #cc2900;
+    -fx-white : #fff;
+    -fx-dark : #222;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+    -fx-yellow: #e2ba67;
+}
+
+.root{
+    -fx-background-color:  -fx-dark;
+}
+
+.glyph-icon{
+    -fx-fill:   -fx-primarytext;
+}
+.glyph-icon:hover{
+    -fx-fill: -fx-secondary;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* css for login */
+
+.login-button{
+    -fx-border-color:  -fx-secondary ;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+
+}
+
+.login-button:hover{
+    -fx-border-color:  -fx-secondary ;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-white;
+}
+
+.login-button:hover .glyph-icon{
+    -fx-fill: -fx-primarytext;
+}
+
+
+.text-field{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 14px;
+    -jfx-focus-color : #f37521 ;
+    -jfx-unfocus-color : -fx-white ;
+    -jfx-font: 1em Arial, sans-serif;
+}
+
+.jfx-text-field,.jfx-password-field
+{
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+}
+
+.wrong-credential{
+    -jfx-focus-color : -fx-red;
+    -jfx-unfocus-color : -fx-red;
+}
+
+.label
+{
+    -fx-text-fill: -fx-white;
+}
+
+/*  css for main */
+
+/* tab styling */
+
+.tab{
+    -fx-pref-width: 170px;
+    -fx-pref-height: 60px;
+    -fx-background-color: -fx-primary;
+    -fx-font-family: "Consolas";
+}
+
+.tab-header-background
+{
+    -fx-background-color: -fx-primary;
+}
+/* menu bar style */
+
+.menu-bar
+{
+    -fx-base : -fx-primary;
+    -fx-background-color: derive(-fx-primary,7%);
+    -fx-font-family: "Consolas";
+}
+
+.context-menu
+{
+    -fx-background-color: derive(-fx-primary,30%);
+    /*  in % value : -ve to make darker and +ve to make lighter */
+
+}
+
+/* table styling */
+.table-view
+{
+    -fx-base : -fx-primary;
+}
+.table-cell
+{
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-dark ;
+    -fx-pref-width: 200px;
+    -fx-text-fill: -fx-primarytext;
+
+}
+.column-header
+{
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-primary ;
+    -fx-pref-width: 200px;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-primarytext;
+}
+
+
+
+.list-tables
+{
+    -fx-background-color: -fx-dark;
+}
+
+.table-row-cell
+{
+    -fx-background-color: -fx-dark;
+    -fx-text-alignment: center;
+}
+.table-column
+{
+    -fx-alignment: center ;
+    -fx-font-weight: bold;
+}
+
+/* radio styling */
+.radio-button
+{
+    -fx-text-fill: -fx-primarytext;
+
+}
+
+/* for custom listing books,members and issued */
+.list-cell
+{
+    -fx-background-color: -fx-dark;
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: Consolas;
+}
+/* for combobox in search tab pane */
+.jfx-combo-box{
+    -jfx-focus-color: -fx-secondary;
+    -jfx-prompt-text-fill : -fx-secondary;
+}
+
+.jfx-combo-box .prompt-text{
+    -jfx-focus-color: -fx-secondary;
+    -jfx-prompt-text-fill : -fx-secondary;
+    -fx-fill: derive(-fx-primarytext,-30%);
+}
+
+
+/* toolbox button*/
+
+.toolbutton
+{
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color:  -fx-dark;
+
+}
+
+.toolbutton:hover
+ {
+     -fx-font-family: "Consolas";
+     -fx-background-color: derive(-fx-primary,-90%);
+     -fx-text-fill : -fx-white;
+     -fx-font-size: 16px;
+ }
+.toolbutton:hover .glyph-icon
+{
+    -fx-fill :-fx-secondary;
+}
+/*jfxhamburger*/
+
+.jfx-hamburger-icon
+{
+    -fx-spacing: 5;
+
+}
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-secondary;
+
+}
+
+#toolbar
+{
+    -fx-background-color:  -fx-dark;
+
+}
+
+.jfx-drawer-side-pane
+{
+    -fx-background-color:  -fx-dark;
+}
+
+#admindatalist
+{
+    -fx-text-fill: #fff;
+}

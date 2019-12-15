@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="113.0" prefWidth="381.0" stylesheets="@../support/common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.removebook.RemoveBookController">
+   <children>
+      <JFXTextField fx:id="id" alignment="CENTER" labelFloat="true" layoutX="54.0" layoutY="33.0" onAction="#remove" promptText="Book id">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="253.0" layoutY="37.0" onAction="#remove" prefHeight="39.0" prefWidth="94.0" ripplerFill="#234bc3" styleClass="login-button" stylesheets="@../support/common.css" text="Remove">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXButton>
+   </children>
+</AnchorPane>

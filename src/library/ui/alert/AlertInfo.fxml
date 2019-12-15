@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="alert_pane" prefHeight="160.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.alert.AlertInfoController">
+   <children>
+      <FontAwesomeIconView fx:id="info" glyphName="INFO_CIRCLE" layoutX="489.0" layoutY="78.0" size="50" wrappingWidth="45.0" />
+      <Label fx:id="msg" layoutX="29.0" layoutY="24.0" prefHeight="74.0" prefWidth="423.0" />
+      <JFXButton layoutX="254.0" layoutY="107.0" onAction="#dispose" prefHeight="30.0" prefWidth="87.0" styleClass="ok_button" text="Ok">
+         <graphic>
+            <FontAwesomeIconView glyphName="CHECK_SQUARE_ALT" size="30" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@../support/common.css" />
+      <URL value="@alert.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="458.0" prefWidth="544.0" styleClass="root" stylesheets="@../support/common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.login.SigupController">
+   <children>
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="120.0" layoutY="119.0" prefHeight="31.0" prefWidth="326.0" promptText="Username" stylesheets="@../support/common.css">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" labelFloat="true" layoutX="120.0" layoutY="169.0" prefHeight="31.0" prefWidth="326.0" promptText="Email ID" stylesheets="@../support/common.css">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mob" labelFloat="true" layoutX="120.0" layoutY="218.0" prefHeight="31.0" prefWidth="326.0" promptText="Mobile No" stylesheets="@../support/common.css">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="121.0" layoutY="270.0" prefHeight="31.0" prefWidth="326.0" promptText="Password" stylesheets="@../support/common.css">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="209.0" layoutY="325.0" onAction="#submit" prefHeight="38.0" prefWidth="108.0" ripplerFill="#195bcd" text="Signup" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="login-button" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_ALT" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="104.0" layoutY="383.0" onAction="#login" prefHeight="38.0" prefWidth="326.0" ripplerFill="#195bcd" styleClass="login-button" stylesheets="@../support/common.css" text="Login if Account already exist" textFill="#fcfcfc">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="USERS" size="25" />
+         </graphic>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" layoutX="85.0" layoutY="143.0" size="25" />
+      <FontAwesomeIconView glyphName="PHONE" layoutX="85.0" layoutY="242.0" size="25" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="85.0" layoutY="294.0" size="25" />
+      <FontAwesomeIconView glyphName="ENVELOPE_ALT" layoutX="82.0" layoutY="193.0" size="25" />
+      <FontAwesomeIconView glyphName="USER_PLUS" layoutX="237.0" layoutY="92.0" size="80" />
+   </children>
+</AnchorPane>

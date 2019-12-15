@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="407.0" prefWidth="574.0" stylesheets="@../support/common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.login.LoginController">
+   <children>
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="151.0" layoutY="129.0" prefHeight="38.0" prefWidth="305.0" promptText="Username">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="150.0" layoutY="203.0" onAction="#login" prefHeight="38.0" prefWidth="201.0" promptText="Password">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="326.0" layoutY="279.0" onAction="#login" prefHeight="41.0" prefWidth="149.0" ripplerFill="#195bcd" styleClass="login-button" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_ALT" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="124.0" layoutY="281.0" onAction="#signup" prefHeight="38.0" prefWidth="149.0" ripplerFill="#195bcd" styleClass="login-button" text="Signup" textFill="#fcfcfc">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_PLUS" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="362.0" layoutY="206.0" onAction="#forget" prefHeight="39.0" prefWidth="108.0" ripplerFill="#6e00c3" styleClass="login-button" text="Forget" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="INFO_CIRCLE" size="20" />
+         </graphic>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="USERS" layoutX="263.0" layoutY="88.0" size="60" wrappingWidth="54.999998569488525" />
+      <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" layoutX="117.0" layoutY="161.0" size="25" wrappingWidth="24.000000163912773" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="117.0" layoutY="233.0" size="25" text="" wrappingWidth="24.000000163912773" />
+   </children>
+</AnchorPane>

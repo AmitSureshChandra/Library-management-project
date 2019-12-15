@@ -1,0 +1,39 @@
+*
+{
+    -fx-primary : #2B2B2B ;
+    -fx-secondary : #0078d7;
+    -fx-primarytext : #fff;
+    -fx-red : #cc2900;
+    -fx-white : #fff;
+    -fx-dark : #222;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+}
+#msg
+{
+    -fx-text-fill: #fff;
+    -fx-font-weight: BOLD;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+}
+.glyph-icon
+{
+    -fx-fill: -fx-secondary;
+}
+#alert_pane
+{
+    -fx-background-color: derive(-fx-primary,10%);
+}
+
+#ok,.ok_button{
+    -fx-fill: #fff;
+    -fx-background-color: -fx-primary;
+}
+#info{
+     -fx-fill: #fff;
+ }
+#error{
+    -fx-fill: #ff0b0a;
+}
+#info:hover{
+    -fx-fill: -fx-secondary;
+}
